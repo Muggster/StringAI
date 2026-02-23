@@ -1,0 +1,55 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "practicePlans",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "userId", "order": "ASCENDING" },
+        { "fieldPath": "date",   "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "practiceSessions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "userId",    "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "goals",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "userId",    "order": "ASCENDING" },
+        { "fieldPath": "completed", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "aiCoaching",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "userId",    "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "drills",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "published",  "order": "ASCENDING" },
+        { "fieldPath": "category",   "order": "ASCENDING" },
+        { "fieldPath": "difficulty", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "lessons",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "published", "order": "ASCENDING" },
+        { "fieldPath": "order",     "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
